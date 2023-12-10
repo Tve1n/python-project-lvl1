@@ -2,3 +2,6 @@ brain_games/__pycache__/__init__.cpython-310.pyc
 brain_games/scripts/__pycache__/brain_games_f.cpython-310.pyc
 brain_games/scripts/__pycache__/__init__.cpython-310.pyc
 .venv/
+brain_games/__pycache__/cli.cpython-310.pyc
+dist/hexlet_code-0.1.0.tar.gz
+dist/hexlet_code-0.1.0-py3-none-any.whl
