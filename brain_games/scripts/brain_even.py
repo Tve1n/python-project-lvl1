@@ -37,7 +37,8 @@ def loop_3times():
         print(kri)
         if kri != cor:
             break
-    print(f"Congratulations, {name}!")
+    else:
+        print(f"Congratulations, {name}!")
 
 
 cor = "Correct!"
