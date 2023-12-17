@@ -2,6 +2,13 @@ from random import randint
 import prompt
 
 
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+
+
 def welcome_user():
     print(f'Hello, {name}!')
     print('Answer "yes" if the number is even, otherwise answer "no".')
