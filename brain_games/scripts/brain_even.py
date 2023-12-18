@@ -10,16 +10,17 @@ if __name__ == "__main__":
     main()
 
 
-def welcome_user():
-    print(f'Hello, {name}!')
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+def welcome_user(name_u, game):  # !!!!!!!!! Заменить на функцию из game_logic !!!!!!!!!!!!!!!!!!!
+    print("Welcome to the Brain Games!")
+    print(f'Hello, {name_u}!')
+    print(game)
 
 
-def answer(num):
+def reaction(num):
     checking_even = num % 2  # 1 - нечетное 0 - четное
-    t_again = "Let's try again, " + name + "!"
+    t_again = "Let's try again, " + name_user + "!"
     fail = "'yes' is wrong answer ;(. Correct answer was 'no'. \n" + t_again
-    f_use = question()
+    f_use = answer()
     if checking_even == 0 and f_use == 'yes':  # Число четное и угадал
         return cor
     elif checking_even == 0 and f_use == 'no':  # Число четное и не угадал
@@ -32,8 +33,8 @@ def answer(num):
         return fail
 
 
-def question():
-    que = prompt.string("Your answer: ")  # Ответ от пользователя
+def answer():       # !!!!!!!!! Заменить на функцию из game_logic !!!!!!!!!!!!!!!!!!!
+    que = prompt.string("Your answer: ")  
     return que
 
 
@@ -41,15 +42,16 @@ def loop_3times():
     for i in range(3):
         n = randint(1, 100)
         print('Question: ' + str(n))
-        kri = answer(n)
+        kri = reaction(n)
         print(kri)
         if kri != cor:
             break
     else:
-        print(f"Congratulations, {name}!")
+        print(f"Congratulations, {name_user}!")
 
 
 cor = "Correct!"
-name = prompt.string("May I have your name? ")
-welcome_user()
+name_user = prompt.string("May I have your name? ")
+game_rule = 'Answer "yes" if the number is even, otherwise answer "no".'
+welcome_user(name_user, game_rule)
 loop_3times()
