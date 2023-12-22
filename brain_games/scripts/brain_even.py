@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from random import randint
 import prompt
+from game_logic import *
 
 
 def main():
@@ -10,13 +11,7 @@ if __name__ == "__main__":
     main()
 
 
-def welcome_user(name_u, game):  # !!!!!!!!! Заменить на функцию из game_logic !!!!!!!!!!!!!!!!!!!
-    print("Welcome to the Brain Games!")
-    print(f'Hello, {name_u}!')
-    print(game)
-
-
-def reaction(num):
+def reaction_1(num):
     checking_even = num % 2  # 1 - нечетное 0 - четное
     t_again = "Let's try again, " + name_user + "!"
     fail = "'yes' is wrong answer ;(. Correct answer was 'no'. \n" + t_again
@@ -33,16 +28,11 @@ def reaction(num):
         return fail
 
 
-def answer():       # !!!!!!!!! Заменить на функцию из game_logic !!!!!!!!!!!!!!!!!!!
-    que = prompt.string("Your answer: ")  
-    return que
-
-
 def loop_3times():
     for i in range(3):
         n = randint(1, 100)
         print('Question: ' + str(n))
-        kri = reaction(n)
+        kri = reaction_1(n)
         print(kri)
         if kri != cor:
             break
@@ -50,8 +40,8 @@ def loop_3times():
         print(f"Congratulations, {name_user}!")
 
 
+game_rules = 'Answer "yes" if the number is even, otherwise answer "no".'
 cor = "Correct!"
-name_user = prompt.string("May I have your name? ")
-game_rule = 'Answer "yes" if the number is even, otherwise answer "no".'
-welcome_user(name_user, game_rule)
+name_user = welcome_user(game_rules)
+
 loop_3times()
