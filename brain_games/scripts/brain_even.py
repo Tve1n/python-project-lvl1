@@ -10,33 +10,37 @@ if __name__ == "__main__":
     main()
 
 
-def reaction_1(num):
+def reaction_1(num, f_use):
     checking_even = num % 2  # 1 - нечетное 0 - четное
-    t_again = "Let's try again, " + name_user + "!"
-    fail = "'yes' is wrong answer ;(. Correct answer was 'no'. \n" + t_again
-    f_use = answer()
     if checking_even == 0 and f_use == 'yes':  # Число четное и угадал
-        return cor
+        return True
     elif checking_even == 0 and f_use == 'no':  # Число четное и не угадал
-        return fail
+        return False
     elif checking_even == 1 and  f_use == 'no':  # Число нечетное и угадал
-        return cor
+        return True
     elif checking_even == 1 and  f_use == 'yes':  # Число нечетное и не угадал
-        return fail
+        return False
     else:
-        return fail
+        return False
 
 
 def loop_3times():
     for i in range(3):
         n = randint(1, 100)
 
-        print('Question: ' + str(n))
+        print(f'Question: {n}')
         
-        kri = reaction_1(n)
-        
-        print(kri)
-        if kri != cor:
+        guess = answer()
+        check = reaction_1(n, guess)
+        if check == True:
+            print(cor)
+            continue
+        elif check == False:
+            if guess == 'yes':
+                rev = 'no'
+            elif guess == 'no':
+                rev = 'yes'
+            print(reaction(name_user, guess, rev))
             break
     else:
         print(f"Congratulations, {name_user}!")
