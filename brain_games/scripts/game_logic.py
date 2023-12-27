@@ -18,4 +18,4 @@ def answer():  # Функция для запроса ответа
 def reaction(name_u, answer1, answer2):  # Функция для реакции
     t_again = f"Let's try again, {name_u}!"
     fail = f"'{answer1}' is wrong answer ;(. Correct answer was '{answer2}'."
-    return f"{fail}\n {t_again}"
+    return f"{fail}\n{t_again}"

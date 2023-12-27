@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from random import randint, choice
-from game_logic import *
+from brain_games.scripts.game_logic import *
 
 
 def main():
@@ -40,7 +40,7 @@ def loop():
         kk = int(answer())  # ответ от пользователя
 
         check = check_answer(oper, kk)  # Проверка на правильность ответа
-        print(type(oper), type(kk), type(check))
+
         if check == True:
             print(cor)
             continue
@@ -54,6 +54,5 @@ def loop():
 game_rules = "What is the result of the expression?"
 cor = "Correct!"
 name_user = welcome_user(game_rules)
-#game_logic.welcome_user(name_user, game_rules)
 
 loop()
