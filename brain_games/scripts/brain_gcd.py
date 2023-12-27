@@ -19,20 +19,14 @@ def operation(n1, n2):  # По алгоритму Эвклида НОД
     return n2
 
 
-def check_answer(otvet, otv):
-    if otvet == otv:
-        return True
-    else:
-        return False
-
-
 def loop():
     for i in range(3):
         n1, n2 = randint(1, 100), randint(1, 100)
         oper = operation(n1, n2)  # происходит операци
-        print(f'Question: {n1} {n2}')  # задается вопрос пользователю
-        guess = int(answer())  # ответ от пользователя
 
+        print(f'Question: {n1} {n2}')  # задается вопрос пользователю
+        
+        guess = int(answer())  # ответ от пользователя
         check = check_answer(oper, guess)  # Проверка на правильность ответа
 
         if check == True:

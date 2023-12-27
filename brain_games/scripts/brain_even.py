@@ -30,8 +30,11 @@ def reaction_1(num):
 def loop_3times():
     for i in range(3):
         n = randint(1, 100)
+
         print('Question: ' + str(n))
+        
         kri = reaction_1(n)
+        
         print(kri)
         if kri != cor:
             break

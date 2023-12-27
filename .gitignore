@@ -7,3 +7,5 @@ brain_games/__pycache__/cli.cpython-310.pyc
 dist/hexlet_code-0.1.0.tar.gz
 dist/hexlet_code-0.1.0-py3-none-any.whl
 brain_games/scripts/__pycache__/game_logic.cpython-310.pyc
+brain_games/scripts/__pycache__/brain_calc.cpython-310.pyc
+brain_games/scripts/__pycache__/brain_gcd.cpython-310.pyc

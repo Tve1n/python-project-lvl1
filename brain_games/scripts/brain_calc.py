@@ -19,13 +19,6 @@ def operation(n1, n2, znak):
         return n1 * n2
 
 
-def check_answer(otvet, otv):
-    if otvet == otv:
-        return True
-    else:
-        return False
-
-
 def loop():
     for i in range(3):
         spisok = ['+', "-", "*"]
