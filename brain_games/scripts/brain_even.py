@@ -44,14 +44,3 @@ cor = "Correct!"
 name_user = welcome_user(game_rules)
 
 loop_3times()
-
-"""
-flake8      6.1.0
-hexlet-code 0.1.0
-mccabe      0.7.0
-pip         23.3.2
-prompt      0.4.1
-pycodestyle 2.11.1
-pyflakes    3.1.0
-setuptools  69.0.2
-"""
