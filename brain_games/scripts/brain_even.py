@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 from random import randint
-from brain_games.scripts.game_logic import *
+from brain_games.scripts.game_logic import welcome_user, \
+    answer, reaction
 
 
 def main():
     pass
+
 
 if __name__ == "__main__":
     main()
@@ -16,9 +18,9 @@ def reaction_1(num, f_use):
         return True
     elif checking_even == 0 and f_use == 'no':  # Число четное и не угадал
         return False
-    elif checking_even == 1 and  f_use == 'no':  # Число нечетное и угадал
+    elif checking_even == 1 and f_use == 'no':  # Число нечетное и угадал
         return True
-    elif checking_even == 1 and  f_use == 'yes':  # Число нечетное и не угадал
+    elif checking_even == 1 and f_use == 'yes':  # Число нечетное и не угадал
         return False
     else:
         return False
@@ -27,15 +29,13 @@ def reaction_1(num, f_use):
 def loop_3times():
     for i in range(3):
         n = randint(1, 100)
-
         print(f'Question: {n}')
-        
         guess = answer()
         check = reaction_1(n, guess)
-        if check == True:
+        if check is True:
             print(cor)
             continue
-        elif check == False:
+        elif check is False:
             if guess == 'yes':
                 rev = 'no'
             elif guess == 'no':

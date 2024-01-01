@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 from random import randint, choice
-from brain_games.scripts.game_logic import *
+from brain_games.scripts.game_logic import welcome_user, \
+    answer, reaction, check_answer
 
 
 def main():
     pass
+
 
 if __name__ == "__main__":
     main()
@@ -34,16 +36,16 @@ def loop():
 
         check = check_answer(oper, guess)  # Проверка на правильность ответа
 
-        if check == True:
+        if check is True:
             print(cor)
             continue
-        elif check == False:
+        elif check is False:
             print(reaction(name_user, guess, oper))
             break
     else:
         print(f"Congratulations, {name_user}!")
 
-    
+
 game_rules = "What is the result of the expression?"
 cor = "Correct!"
 name_user = welcome_user(game_rules)

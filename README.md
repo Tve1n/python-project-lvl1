@@ -4,6 +4,3 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/aea5faf39b332c01c7e2/maintainability)](https://codeclimate.com/github/Tve1n/python-project-lvl1/maintainability)
 
-
-
-

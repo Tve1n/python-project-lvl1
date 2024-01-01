@@ -1,5 +1,4 @@
 import prompt
-from random import randint, choice
 
 
 def welcome_user(game):  # Функция для приветствия

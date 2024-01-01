@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 from random import randint
-from brain_games.scripts.game_logic import *
+from brain_games.scripts.game_logic import welcome_user, \
+    answer, reaction
 
 
 def main():
     pass
+
 
 if __name__ == "__main__":
     main()
@@ -19,16 +21,16 @@ def IsPrime(n):
 
 def operation(num, ans):
     checking_prime = IsPrime(num)
-    if checking_prime == True and ans == 'yes':  # Число четное и угадал
+    if checking_prime is True and ans == 'yes':  # Число четное и угадал
         return True
-    elif checking_prime == False and ans == 'no':  # Число четное и не угадал
+    elif checking_prime is False and ans == 'no':  # Число четное и не угадал
         return True
-    elif checking_prime == True and  ans == 'no':  # Число нечетное и угадал
+    elif checking_prime is True and ans == 'no':  # Число нечетное и угадал
         return False
-    elif checking_prime == False and  ans == 'yes':  # Число нечетное и не угадал
+    elif checking_prime is False and ans == 'yes':  # Число нечетное и не угадал
         return False
     else:
-        return False 
+        return False
 
 
 def loop():
@@ -38,11 +40,11 @@ def loop():
         print(f'Question: {rand_num}')  # задается вопрос пользователю
 
         guess = answer()  # ответ от пользователя
-        check = operation(rand_num, guess) # Проверка на правильность ответа
-        if check == True:
+        check = operation(rand_num, guess)  # Проверка на правильность ответа
+        if check is True:
             print(cor)
             continue
-        elif check == False:
+        elif check is False:
             if guess == 'yes':
                 rev = 'no'
             elif guess == 'no':
