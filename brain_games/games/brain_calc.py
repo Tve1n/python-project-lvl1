@@ -51,3 +51,5 @@ cor = "Correct!"
 name_user = welcome_user(game_rules)
 
 loop()
+
+# Вызываем функцию движка игры 

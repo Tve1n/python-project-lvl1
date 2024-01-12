@@ -27,3 +27,12 @@ def check_answer(otvet, otv_user):
         return True
     else:
         return False
+
+
+def game_engine(game):
+    pass
+'''
+1) все выводы на экран
+2) запрос имени пользователя и ответа
+3) сикл с раундами
+'''
