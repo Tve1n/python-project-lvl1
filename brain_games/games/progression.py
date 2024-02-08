@@ -1,4 +1,5 @@
-from random import randint, choice
+#!/usr/bin/env python3
+from random import randint
 
 
 def main():
