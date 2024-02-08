@@ -22,7 +22,7 @@ def calculation(n1, znak, n2):
 
 rules = "What is the result of the expression?"
 
-def randss():
+def objective():
     spisok = ['+', "-", "*"]
     sp4 = [randint(1, 100), randint(1, 100)]
     n1, n2 = max(sp4), min(sp4)

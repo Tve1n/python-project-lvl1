@@ -7,12 +7,12 @@ def game_engine(game):
     print(f'Hello, {name_u}!')
     print(game.rules)  # 1) Правила игры 
     for i in range(3):
-        operation, true_answer = game.randss()  # две переменные разом
-        print(f'Question: {operation}')  # 2) ПЕРЕМЕННАЯ!!
-        guess = int(prompt.string("Your answer: "))
+        operation, true_answer = game.objective()  # две переменные разом
+        print(f'Question: {operation}')  
+        guess = prompt.string("Your answer: ")  # ПОДУМАТЬ КАК ИСПРАВИТЬ СТРОЧКУ!!!
         t_again = f"Let's try again, {name_u}!"
         fail = f"'{guess}' is wrong answer ;(. Correct answer was '{true_answer}'."
-        if true_answer == guess:  # 3) ПЕРЕМЕННАЯ
+        if str(true_answer) == guess:  
             print('Correct')
             continue
         else:

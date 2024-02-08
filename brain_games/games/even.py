@@ -1,4 +1,5 @@
-from random import randint, choice
+#!/usr/bin/env python3
+from random import randint
 
 
 def main():
@@ -26,7 +27,3 @@ def objective():
     OP = f'{n}'
     TA = calculation(n)
     return OP, TA
-
-
-
-
