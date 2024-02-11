@@ -19,9 +19,6 @@ def calculation(n1, znak, n2):
         return n1 * n2
 
 
-
-rules = "What is the result of the expression?"
-
 def objective():
     spisok = ['+', "-", "*"]
     sp4 = [randint(1, 100), randint(1, 100)]
@@ -30,3 +27,6 @@ def objective():
     OP = f'{n1} {znak} {n2}'
     TA = calculation(n1, znak, n2)
     return OP, TA
+
+
+rules = "What is the result of the expression?"

@@ -18,10 +18,11 @@ def calculation(num):
         return 'no'
 
 
-rules = 'Answer "yes" if the number is even, otherwise answer "no".'
-
 def objective():
     n = randint(1, 100)
     OP = f'{n}'
     TA = calculation(n)
     return OP, TA
+
+
+rules = 'Answer "yes" if the number is even, otherwise answer "no".'

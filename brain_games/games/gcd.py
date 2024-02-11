@@ -20,10 +20,10 @@ def calculation(n1, n2):  # По алгоритму Эвклида НОД
 
 
 def objective():
-        n1, n2 = randint(1, 100), randint(1, 100)
-        OP = f'{n1} {n2}'
-        TA = calculation(n1, n2)  # происходит операци
-        return OP, TA
+    n1, n2 = randint(1, 100), randint(1, 100)
+    OP = f'{n1} {n2}'
+    TA = calculation(n1, n2)  # происходит операци
+    return OP, TA
 
 
 rules = 'Find the greatest common divisor of given numbers.'
