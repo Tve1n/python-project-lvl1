@@ -4,12 +4,12 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/aea5faf39b332c01c7e2/maintainability)](https://codeclimate.com/github/Tve1n/python-project-lvl1/maintainability)
 
-https://asciinema.org/a/DGNdvCupUKe88odd8VXG8wvNu
+[«Проверка на чётность»](https://asciinema.org/a/R6fEWFjVQGK1TFdzKIJyYDkM9)
 
-https://asciinema.org/a/HunLYOlgzUz61smNvFOkRYTZk
+[«Калькулятор»](https://asciinema.org/a/Z2ZjpaGR2nJqxsIw5bfKXFPFx)
 
-https://asciinema.org/a/ESo69Xtrtej6Xk3zgINYFXooV
+[«НОД»](https://asciinema.org/a/GpFxowOuJUfIyexxnyKxyTRAn)
 
-https://asciinema.org/a/LeDvf2FhVZInK4F9i879hCngd
+[«Арифметическая прогрессия»](https://asciinema.org/a/BQ3QBeqmdLSsoqbWSG1ln9601)
 
-https://asciinema.org/a/y6siK8AEwvOBDBLzBsHyLnPoX
+[«Простое ли число?»](https://asciinema.org/a/VFOddVYgxKaMicEuaOyJdzbng)

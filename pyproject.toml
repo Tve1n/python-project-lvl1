@@ -2,8 +2,11 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = ""
-authors = ["tve1n <timarumak@gmail.com>"]
+authors = [
+  "tve1n <timarumak@gmail.com>"
+]
 readme = "README.md"
+repository = "https://github.com/Tve1n/python-project-lvl1.git"
 packages = [
   { include = "brain_games" },
 ]
