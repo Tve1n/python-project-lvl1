@@ -18,8 +18,6 @@ def calculation(num):
         return 'no'
 
 
-
-
 rules = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 def objective():
