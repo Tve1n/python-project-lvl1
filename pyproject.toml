@@ -8,7 +8,7 @@ authors = [
 readme = "README.md"
 repository = "https://github.com/Tve1n/python-project-lvl1.git"
 packages = [
-  { include = "brain_games" },
+  { include = "brain_games" }
 ]
 
 [tool.poetry.dependencies]
@@ -23,7 +23,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-brain-game = "brain_games.scripts.brain_game:main"
+brain-games = "brain_games.scripts.brain_game:main"
 brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
