@@ -1,7 +1,7 @@
 import prompt
 
 
-def game_engine(game):
+def start_game(game):
     print("Welcome to the Brain Games!")
     name_u = prompt.string("May I have your name? ")
     print(f'Hello, {name_u}!')
