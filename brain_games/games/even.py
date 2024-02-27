@@ -2,15 +2,10 @@
 from random import randint
 
 
-def main():
-    pass
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-if __name__ == "__main__":
-    main()
-
-
-def calculation(num):
+def isEven(num):
     checking_even = num % 2  # 1 - нечетное 0 - четное
     if checking_even == 0:
         return 'yes'
@@ -18,11 +13,9 @@ def calculation(num):
         return 'no'
 
 
-def objective():
-    n = randint(1, 100)
-    OP = f'{n}'
-    TA = calculation(n)
-    return OP, TA
+def getExpression():
+    number = randint(1, 100)
+    operation = f'{number}' #!
+    answer = isEven(number) #!
 
-
-rules = 'Answer "yes" if the number is even, otherwise answer "no".'
+    return operation, answer

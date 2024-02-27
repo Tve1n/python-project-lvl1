@@ -2,15 +2,10 @@
 from random import randint
 
 
-def main():
-    pass
+RULES = 'Find the greatest common divisor of given numbers.'
 
 
-if __name__ == "__main__":
-    main()
-
-
-def calculation(n1, n2):  # По алгоритму Эвклида НОД
+def getNOD(n1, n2):  # По алгоритму Эвклида НОД
     while n1 != n2:
         if n1 > n2:
             n1 = n1 - n2
@@ -19,11 +14,9 @@ def calculation(n1, n2):  # По алгоритму Эвклида НОД
     return n2
 
 
-def objective():
-    n1, n2 = randint(1, 100), randint(1, 100)
-    OP = f'{n1} {n2}'
-    TA = calculation(n1, n2)  # происходит операци
-    return OP, TA
+def getExpression():
+    first_num, second_num = randint(1, 100), randint(1, 100)
+    operation = f'{first_num} {second_num}'
+    answer = getNOD(first_num, second_num)  # происходит операци
 
-
-rules = 'Find the greatest common divisor of given numbers.'
+    return operation, answer

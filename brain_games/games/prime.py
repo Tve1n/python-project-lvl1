@@ -2,34 +2,22 @@
 from random import randint
 
 
-def main():
-    pass
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-if __name__ == "__main__":
-    main()
-
-
-def IsPrime(n):
+def isPrime(num):
     d = 2
-    while d * d <= n and n % d != 0:
+    while d * d <= num and num % d != 0:
         d += 1
-    return d * d > n
-
-
-def calculation(num):
-    checking_prime = IsPrime(num)
-    if checking_prime is True:
+    if d * d > num:
         return "yes"
-    elif checking_prime is False:
+    else:
         return "no"
 
 
-def objective():
-    n = randint(5, 50)
-    OP = f'{n}'
-    TA = calculation(n)
-    return OP, TA
+def getExpression():
+    number = randint(5, 50)
+    operation = f'{number}' #!
+    answer = isPrime(number) #! Поменять имя переменных
 
-
-rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    return operation, answer

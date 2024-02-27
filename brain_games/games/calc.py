@@ -1,32 +1,18 @@
 #!/usr/bin/env python3
 from random import randint, choice
+import operator
 
 
-def main():
-    pass
+RULES = "What is the result of the expression?"
 
 
-if __name__ == "__main__":
-    main()
-
-
-def calculation(n1, znak, n2):
-    if znak == '+':
-        return n1 + n2
-    elif znak == "-":
-        return n1 - n2
-    elif znak == '*':
-        return n1 * n2
-
-
-def objective():
-    spisok = ['+', "-", "*"]
-    sp4 = [randint(1, 100), randint(1, 100)]
-    n1, n2 = max(sp4), min(sp4)
+def getExpression():
+    spisok = [('+', operator.add), ('-', operator.sub), ('*', operator.mul)]
+    numbers = [randint(1, 100), randint(1, 100)]
+    first_number, second_number = max(numbers), min(numbers)
     znak = choice(spisok)
-    OP = f'{n1} {znak} {n2}'
-    TA = calculation(n1, znak, n2)
-    return OP, TA
 
+    operation = f'{first_number} {znak[0]} {second_number}'
+    answer = znak[1](first_number, second_number)
 
-rules = "What is the result of the expression?"
+    return operation, answer

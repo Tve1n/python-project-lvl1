@@ -2,32 +2,28 @@
 from random import randint
 
 
-def main():
-    pass
+RULES = "What number is missing in the progression?"
 
 
-if __name__ == "__main__":
-    main()
+def getProgression():
+    item = randint(1, 20)  # первое число
+    list_progression = [item]
+    denominator_progression = randint(2, 5)  # знаменатель прогресии
 
-
-def progression():
-    b_prev = randint(1, 20)  # первое число
-    list_progress = [b_prev]
-    q = randint(2, 5)  # знаменатель прогресии
     for i in range(9):
-        b_cur = b_prev + q  # следующий элемент прогрессии
-        b_prev = b_cur
-        list_progress.append(b_cur)
-    return list_progress
+        next_item = item + denominator_progression  # следующий элемент 
+        item = next_item
+        list_progression.append(next_item)
+
+    return list_progression
 
 
-def objective():
-    spisok = progression()
-    rand_num = randint(0, 9)
-    spisok.insert(rand_num + 1, '..')
-    TA = spisok.pop(rand_num)  # Удаленное из последовательности число
-    OP = " ".join((str(x) for x in spisok))
-    return OP, TA
+def getExpression():
+    spisok = getProgression()
+    deleted_number = randint(0, 9)
+    spisok.insert(deleted_number + 1, '..')
 
-
-rules = "What number is missing in the progression?"
+    answer = spisok.pop(deleted_number)
+    operation = " ".join((str(x) for x in spisok))
+    
+    return operation, answer
