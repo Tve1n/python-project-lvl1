@@ -16,15 +16,15 @@ This project was built using these tools:
 
 ### Application installation and gameplay
 
-[![asciicast](https://asciinema.org/a/4S6Kb6BxtpTIv2bfAKwULOvUH.svg)](https://asciinema.org/a/4S6Kb6BxtpTIv2bfAKwULOvUH)
+[![asciicast](https://asciinema.org/a/ZVj815kIR1yRRp3aPIX1A7ghK.svg)](https://asciinema.org/a/ZVj815kIR1yRRp3aPIX1A7ghK)
 
-[![asciicast](https://asciinema.org/a/ZAHgX0u1rsL1nBs2bzSyBwa9p.svg)](https://asciinema.org/a/ZAHgX0u1rsL1nBs2bzSyBwa9p)
+[![asciicast](https://asciinema.org/a/Bj8HgYMq3Hc2xr97hskm42hG0.svg)](https://asciinema.org/a/Bj8HgYMq3Hc2xr97hskm42hG0)
 
-[![asciicast](https://asciinema.org/a/zXMicYUjm5BMwMjl6pbyZUcrx.svg)](https://asciinema.org/a/zXMicYUjm5BMwMjl6pbyZUcrx)
+[![asciicast](https://asciinema.org/a/t93EiwJ1nTeKOU0mJfrwJGDWA.svg)](https://asciinema.org/a/t93EiwJ1nTeKOU0mJfrwJGDWA)
 
-[![asciicast](https://asciinema.org/a/IVKRQ1AXn2ephqTmeVhcqNeXL.svg)](https://asciinema.org/a/IVKRQ1AXn2ephqTmeVhcqNeXL)
+[![asciicast](https://asciinema.org/a/gmqheorp2vtKaqHOCFJfiGzJj.svg)](https://asciinema.org/a/gmqheorp2vtKaqHOCFJfiGzJj)
 
-[![asciicast](https://asciinema.org/a/wPBtcQJH0Xkdf6HHyBSRcNpZv.svg)](https://asciinema.org/a/wPBtcQJH0Xkdf6HHyBSRcNpZv)
+[![asciicast](https://asciinema.org/a/lIof6fjqjiTJiasOr9ojIkcNe.svg)](https://asciinema.org/a/lIof6fjqjiTJiasOr9ojIkcNe)
 
 ---
 

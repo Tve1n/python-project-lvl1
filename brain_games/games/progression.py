@@ -11,7 +11,7 @@ def getProgression():
     denominator_progression = randint(2, 5)  # знаменатель прогресии
 
     for i in range(9):
-        next_item = item + denominator_progression  # следующий элемент 
+        next_item = item + denominator_progression  # следующий элемент
         item = next_item
         list_progression.append(next_item)
 
@@ -25,5 +25,5 @@ def getExpression():
 
     answer = spisok.pop(deleted_number)
     operation = " ".join((str(x) for x in spisok))
-    
+
     return operation, answer

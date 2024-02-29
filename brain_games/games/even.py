@@ -15,7 +15,7 @@ def isEven(num):
 
 def getExpression():
     number = randint(1, 100)
-    operation = f'{number}' #!
-    answer = isEven(number) #!
+    operation = f'{number}'
+    answer = isEven(number)
 
     return operation, answer

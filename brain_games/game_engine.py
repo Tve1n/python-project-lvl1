@@ -13,10 +13,11 @@ def start_game(game):
         operation, true_answer = game.getExpression()  # две переменные разом
         print(f'Question: {operation}')
         guess = prompt.string("Your answer: ")
-        
+
         if str(true_answer) != guess:
-            print(f"'{guess}' is wrong answer ;(. Correct answer was '{true_answer}'.")
-            print(f"Let's try again, {name_u}!")
+            print(f"'{guess}' is wrong answer ;(."
+                  f"Correct answer was '{true_answer}'.\n"
+                  f"Let's try again, {name_u}!")
             break
 
         print('Correct')

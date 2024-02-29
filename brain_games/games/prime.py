@@ -17,7 +17,7 @@ def isPrime(num):
 
 def getExpression():
     number = randint(5, 50)
-    operation = f'{number}' #!
-    answer = isPrime(number) #! Поменять имя переменных
+    operation = f'{number}'
+    answer = isPrime(number)
 
     return operation, answer
