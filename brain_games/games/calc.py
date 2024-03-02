@@ -6,13 +6,13 @@ import operator
 RULES = "What is the result of the expression?"
 
 
-def getExpression():
-    spisok = [('+', operator.add), ('-', operator.sub), ('*', operator.mul)]
+def get_question_and_answer():
+    symbols = [('+', operator.add), ('-', operator.sub), ('*', operator.mul)]
     numbers = [randint(1, 100), randint(1, 100)]
     first_number, second_number = max(numbers), min(numbers)
-    znak = choice(spisok)
+    operator_name, operator_method = choice(symbols)
 
-    operation = f'{first_number} {znak[0]} {second_number}'
-    answer = znak[1](first_number, second_number)
+    operation = f'{first_number} {operator_name} {second_number}'
+    answer = operator_method(first_number, second_number)
 
     return operation, answer

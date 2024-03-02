@@ -7,10 +7,10 @@ def start_game(game):
     print(f'Hello, {name_u}!')
 
     print(game.RULES)  # 1) Правила игры
-    three_questions = 3
+    round_count = 3
 
-    for i in range(three_questions):
-        operation, true_answer = game.getExpression()  # две переменные разом
+    for _ in range(round_count):
+        operation, true_answer = game.get_question_and_answer()
         print(f'Question: {operation}')
         guess = prompt.string("Your answer: ")
 

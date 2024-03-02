@@ -5,7 +5,7 @@ from random import randint
 RULES = 'Find the greatest common divisor of given numbers.'
 
 
-def getNOD(n1, n2):  # По алгоритму Эвклида НОД
+def get_divisor(n1, n2):  # По алгоритму Эвклида НОД
     while n1 != n2:
         if n1 > n2:
             n1 = n1 - n2
@@ -14,9 +14,9 @@ def getNOD(n1, n2):  # По алгоритму Эвклида НОД
     return n2
 
 
-def getExpression():
+def get_question_and_answer():
     first_num, second_num = randint(1, 100), randint(1, 100)
     operation = f'{first_num} {second_num}'
-    answer = getNOD(first_num, second_num)  # происходит операци
+    answer = get_divisor(first_num, second_num)  # происходит операци
 
     return operation, answer

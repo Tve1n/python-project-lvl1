@@ -5,25 +5,17 @@ from random import randint
 RULES = "What number is missing in the progression?"
 
 
-def getProgression():
-    item = randint(1, 20)  # первое число
-    list_progression = [item]
-    denominator_progression = randint(2, 5)  # знаменатель прогресии
+def get_question_and_answer():
+    lenght_list = 10
+    first_num = randint(1, 21)
+    denominator_progression = randint(2, 5)  # шаг прогрессии
+    last_num = denominator_progression * lenght_list + first_num + 1
 
-    for i in range(9):
-        next_item = item + denominator_progression  # следующий элемент
-        item = next_item
-        list_progression.append(next_item)
-
-    return list_progression
-
-
-def getExpression():
-    spisok = getProgression()
+    list_progression = list(range(first_num, last_num, denominator_progression))
     deleted_number = randint(0, 9)
-    spisok.insert(deleted_number + 1, '..')
+    list_progression.insert(deleted_number + 1, '..')
 
-    answer = spisok.pop(deleted_number)
-    operation = " ".join((str(x) for x in spisok))
+    answer = list_progression.pop(deleted_number)
+    operation = " ".join((str(x) for x in list_progression))
 
     return operation, answer
