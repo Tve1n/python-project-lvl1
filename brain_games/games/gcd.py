@@ -17,6 +17,6 @@ def get_divisor(n1, n2):  # По алгоритму Эвклида НОД
 def get_question_and_answer():
     first_num, second_num = randint(1, 100), randint(1, 100)
     operation = f'{first_num} {second_num}'
-    answer = get_divisor(first_num, second_num)  # происходит операци
+    answer = get_divisor(first_num, second_num)
 
     return operation, answer

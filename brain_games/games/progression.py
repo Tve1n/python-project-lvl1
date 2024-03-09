@@ -1,21 +1,20 @@
 #!/usr/bin/env python3
-from random import randint
+from random import randint, randrange
 
 
 RULES = "What number is missing in the progression?"
 
 
 def get_question_and_answer():
-    lenght_list = 10
-    first_num = randint(1, 21)
-    denominator_progression = randint(2, 5)  # шаг прогрессии
-    last_num = denominator_progression * lenght_list + first_num + 1
+    length = 10
+    start = randint(1, 21)
+    step = randint(2, 5)
+    end = step * length + start
 
-    list_progression = list(range(first_num, last_num, denominator_progression))
-    deleted_number = randint(0, 9)
-    list_progression.insert(deleted_number + 1, '..')
+    progression = list(range(start, end, step))
+    hidden_index = randrange(0, length)
+    answer, progression[hidden_index] = progression[hidden_index], '..'
 
-    answer = list_progression.pop(deleted_number)
-    operation = " ".join((str(x) for x in list_progression))
+    operation = " ".join((map(str, progression)))
 
     return operation, answer
